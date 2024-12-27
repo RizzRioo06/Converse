@@ -1,0 +1,172 @@
+
+:root{
+    --bgColor: white;
+    --sneakersFont: 'Times New Roman';
+} 
+
+
+body {
+    height: 500vh;
+    scroll-behavior: smooth;
+}
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.converse{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: lighter;
+}
+
+.logo {
+    width: 50px;
+    margin: 0px 20px;
+}
+
+.navbar-brand {
+    font-family: serif;
+    letter-spacing: 3px;
+}
+
+  .nav-item a {
+    font-family: serif;
+    position: relative;
+} 
+  
+@media screen and (min-width:992px) {
+    .nav-item a::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 1px;
+        background-color: white;
+        left: 7px;
+        bottom: 7px;
+    }
+    .nav-item a:hover::before{
+        width: 80%;
+        transition: 0.5s;
+    }
+} 
+
+.dropdown-menu{
+    background-color: #333;
+    color: #fff;
+}
+
+.dropdown-item{
+    color: #fff;
+}
+
+header{
+    background-color:var(--bgColor);
+}
+.headerText{
+    font-family: var(--sneakersFont);
+}
+
+.border-dark {
+    border-color: #000000; 
+}
+
+.headPlay {
+    transition: 0.5s;
+}
+
+.headPlay:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+} 
+
+.container-fulid .watch a{
+    text-decoration: none;
+}
+
+.headerplay {
+    transition: 0.5s;
+}
+
+.headerplay:hover {
+    transform: scale(1.2);
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:white;
+    padding: 10px 0;
+    transition: top 0.3s;
+  }
+  
+  .navbar.hidden {
+    top: -50px;
+  }
+
+  footer {
+    background-color:black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    /* position: fixed; */
+    bottom: 100%;
+    width: 100%;
+  }
+  footer p {
+    margin: 0;
+  }
+
+body{
+    font-family: 'Times New Roman';
+}
+
+.aboutText{
+    text-align: justify;
+}
+@media screen and (min-width:1400px) {
+    .aboutImage{
+        height: 650px !important
+    }
+    
+}
+
+@media screen and (min-width: 500px){
+    .eventImage{
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .eventImage{
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .eventImage{
+        height: 510px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .eventImage{
+        height: 620px;
+    }
+}
+
